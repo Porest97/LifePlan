@@ -1,0 +1,53 @@
+﻿@model LifePlan.Models.DataModels.Person
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Company)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Company.CompanyName)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.FirstName)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.FirstName)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.LastName)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.LastName)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.StreetAddress)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.StreetAddress)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.ZipCode)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.ZipCode)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.City)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.City)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Country)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Country)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Ssn)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Ssn)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.PhoneNumbers)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.PhoneNumbers)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.IdentityUser)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.IdentityUser.Email)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.PersonCategory)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.PersonCategory.PersonCategoryName)</dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-sm btn-success" asp-controller="Home" asp-action="People">Back to People</a>
+    <a class="btn btn-sm btn-success" asp-controller="People" asp-action="IndexSearch">Back to List</a>
+</div>
